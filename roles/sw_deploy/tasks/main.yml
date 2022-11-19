@@ -1,7 +1,7 @@
-- name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
+- name: Create a file called lookup('env','directory')/testfile.txt with the content 'lookup('env','test')'.
   copy:
-    content: hello world\n
-    dest: /home/tcruz/testfile.txt
+    content: "{{ lookup('env','test')}}"
+    dest: "{{ lookup('env','directory') }}/testfile.txt"
 
 - name: Print Env Var
   debug:
