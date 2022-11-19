@@ -1,0 +1,6 @@
+- name: Software Deployment Test
+  hosts: localhost
+  tasks:
+    - name: Include de sw_deploy Role
+      include_role: 
+        name: sw_deploy
