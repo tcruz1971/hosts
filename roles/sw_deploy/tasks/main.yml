@@ -1,7 +1,7 @@
 - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
   copy:
     content: hello world\n
-    dest: /home/tcruz/Programmieren/ansible/sw_deploy/testfile.txt
+    dest: /home/tcruz/testfile.txt
 
 - name: Print Env Var
   debug:
