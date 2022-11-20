@@ -1,4 +1,4 @@
-- name: Create a file called lookup('env','directory')/testfile.txt with the content 'lookup('env','test')'.
+- name: Create a file called {{ lookup('env','directory') }}/testfile.txt with the content {{ lookup('env','test') }}.
   copy:
     content: "{{ lookup('env','test')}}"
     dest: "{{ lookup('env','directory') }}/testfile.txt"
