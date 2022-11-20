@@ -6,3 +6,7 @@
 - name: Print Env Var
   debug:
     msg: "{{ lookup('env','test')}}"
+
+- name: Print Workspace Directory
+  debug:
+    msg: "{{ lookup('env','WORKSPACE')}}"
