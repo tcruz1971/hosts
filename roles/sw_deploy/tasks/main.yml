@@ -10,3 +10,7 @@
 - name: Print Workspace Directory
   debug:
     msg: "{{ lookup('env','WORKSPACE')}}"
+
+- name: Print Software Version
+  debug:
+    msg: "{{ lookup('env','SW_VERSION')}}"
